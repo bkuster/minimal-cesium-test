@@ -4,7 +4,10 @@
   "description": "nodeRequire is not a function setup",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node build.js",
+    "works": "node works.js",
+    "fails": "node fails.js"
   },
   "repository": {
     "type": "git",
@@ -20,5 +23,10 @@
   "bugs": {
     "url": "https://github.com/bkuster/minimal-cesium-test/issues"
   },
-  "homepage": "https://github.com/bkuster/minimal-cesium-test#readme"
+  "homepage": "https://github.com/bkuster/minimal-cesium-test#readme",
+  "dependencies": {
+    "amd-loader": "0.0.8",
+    "cesium": "^1.55.0",
+    "webpack": "^4.29.6"
+  }
 }
